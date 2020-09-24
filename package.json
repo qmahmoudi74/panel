@@ -1,0 +1,15 @@
+{
+  "name": "ehsan",
+  "version": "0.0.1",
+  "description": "for test",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "css": "npx tailwindcss build ./src/styles/tailwind.css -o ./dist/main.css"
+  },
+  "dependencies": {
+    "tailwindcss": "^1.8.10"
+  },
+  "author": "Ehsan Mahmoudi",
+  "license": "ISC"
+}
