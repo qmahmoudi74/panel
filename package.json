@@ -1,11 +1,11 @@
 {
-  "name": "ehsan",
+  "name": "panel",
   "version": "0.0.1",
   "description": "for test",
   "main": "index.js",
   "private": true,
   "scripts": {
-    "css": "npx tailwindcss build ./src/styles/tailwind.css -o ./dist/main.css"
+    "build:css": "npx tailwindcss build ./src/styles/tailwind.css -o ./dist/main.css"
   },
   "dependencies": {
     "tailwindcss": "^1.8.10"
