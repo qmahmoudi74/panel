@@ -4,9 +4,89 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
     <title>Ehsan</title>
   </head>
-  <body>
-    
+  <body class="bg-blue-700 flex text-gray-700">
+    <aside
+      class="h-screen w-32 text-white flex flex-col justify-center items-center"
+    >
+      <div
+        class="logo flex flex-col items-center justify-center h-24 w-24 absolute"
+      >
+        <i class="fa fa-adjust fa-2x"></i>
+        <div class="logo-title mt-4">InTrust</div>
+      </div>
+      <div
+        class="home mb-2 flex flex-col items-center justify-center w-24 h-24 bg-blue-600 rounded-lg cursor-pointer"
+      >
+        <i class="fa fa-home mb-1"></i>
+        <div class="icon-title text-xs">Home</div>
+      </div>
+      <div
+        class="stat mb-2 flex flex-col items-center justify-center w-24 h-24 hover:bg-blue-600 rounded-lg cursor-pointer"
+      >
+        <i class="fa fa-chart-bar mb-1"></i>
+        <div class="icon-title text-xs">Stats</div>
+      </div>
+      <div
+        class="action mb-2 flex flex-col items-center justify-center w-24 h-24 hover:bg-blue-600 rounded-lg cursor-pointer"
+      >
+        <i class="fa fa-align-left mb-1"></i>
+        <div class="icon-title text-xs">Actions</div>
+      </div>
+      <div
+        class="setting flex flex-col items-center justify-center w-24 h-24 hover:bg-blue-600 rounded-lg cursor-pointer"
+      >
+        <i class="fa fa-cog mb-1"></i>
+        <div class="icon-title text-xs">Settings</div>
+      </div>
+    </aside>
+
+    <main class="main-panel bg-white flex-grow h-screen">
+      <header class="w-full h-32 flex">
+        <div class="search">
+          <i class="fas fa-search text-sm text-gray-500 absolute"></i>
+          <input
+            type="text"
+            class="search-input bg-transparent border-b px-6 py-2"
+            placeholder="search for something"
+          />
+        </div>
+        <nav class="navigation flex justify-evenly items-center">
+          <a href="#">Contacts</a>
+          <a href="#">Support</a>
+        </nav>
+        <div class="user flex">
+          <div class="alert flex justify-center items-center w-32">
+            <div class="envelope-icon mx-2 cursor-pointer">
+              <i class="fa fa-envelope text-xl"></i>
+            </div>
+            <div class="bell-icon mx-2 relative cursor-pointer">
+              <div class="notification absolute">
+                <i class="fa fa-circle text-red-400"></i>
+              </div>
+              <i class="fa fa-bell text-xl"></i>
+            </div>
+          </div>
+          <div
+            class="user-account flex flex-grow justify-center items-center"
+          >
+            <div
+              class="avatar rounded-full bg-orange-400 text-white w-12 h-12 flex justify-center items-center cursor-pointer"
+            >
+              <i class="fa fa-user"></i>
+            </div>
+            <div class="account h-12 w-48 px-2">
+              <div class="username font-bold">Ehsan Mahmoudi</div>
+              <div class="account-type text-sm text-gray-500">Free account</div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </main>
   </body>
 </html>

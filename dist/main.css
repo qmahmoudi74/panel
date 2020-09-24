@@ -586,6 +586,14 @@ video {
   height: auto;
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus {
+  outline: 0;
+}
+
 .container {
   width: 100%;
 }
@@ -612,6 +620,46 @@ video {
   .container {
     max-width: 1280px;
   }
+}
+
+.logo {
+  top: 1rem;
+  left: 1rem;
+}
+
+.main-panel {
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.search i {
+  left: 13%;
+}
+
+.search-input {
+  width: 75%;
+}
+
+.navigation {
+  width: 20%;
+}
+
+.user {
+  width: 30%;
+}
+
+.bell-icon .notification {
+  top: 3px;
+  right: 0;
+  font-size: 15%;
 }
 
 .space-y-0 > :not(template) ~ :not(template) {

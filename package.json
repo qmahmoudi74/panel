@@ -8,6 +8,8 @@
     "build:css": "npx tailwindcss build ./src/styles/tailwind.css -o ./dist/main.css"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "font-awesome": "^4.7.0",
     "tailwindcss": "^1.8.10"
   },
   "author": "Ehsan Mahmoudi",
