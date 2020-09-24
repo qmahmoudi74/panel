@@ -46,8 +46,8 @@
       </div>
     </aside>
 
-    <main class="main-panel bg-white flex-grow h-screen">
-      <header class="w-full h-32 flex">
+    <main class="main-panel bg-white flex-grow h-screen px-16">
+      <header class="w-full h-24 flex">
         <div class="search">
           <i class="fas fa-search text-sm text-gray-500 absolute"></i>
           <input
@@ -56,12 +56,12 @@
             placeholder="search for something"
           />
         </div>
-        <nav class="navigation flex justify-evenly items-center">
+        <nav class="navigation flex justify-evenly items-center text-sm px-12">
           <a href="#">Contacts</a>
           <a href="#">Support</a>
         </nav>
         <div class="user flex">
-          <div class="alert flex justify-center items-center w-32">
+          <div class="alert flex justify-end items-center w-32 pr-4">
             <div class="envelope-icon mx-2 cursor-pointer">
               <i class="fa fa-envelope text-xl"></i>
             </div>
@@ -72,21 +72,212 @@
               <i class="fa fa-bell text-xl"></i>
             </div>
           </div>
-          <div
-            class="user-account flex flex-grow justify-center items-center"
-          >
+          <div class="user-account flex justify-end items-center">
             <div
               class="avatar rounded-full bg-orange-400 text-white w-12 h-12 flex justify-center items-center cursor-pointer"
             >
               <i class="fa fa-user"></i>
             </div>
-            <div class="account h-12 w-48 px-2">
+            <div class="account h-12 pl-4 w-max-content">
               <div class="username font-bold">Ehsan Mahmoudi</div>
               <div class="account-type text-sm text-gray-500">Free account</div>
             </div>
           </div>
         </div>
       </header>
+
+      <article class="flex">
+        <section class="left">
+          <div class="income mb-2">
+            <h1 class="text-xl font-bold">Your income</h1>
+            <div class="graphs grid grid-cols-3 h-32">
+              <div class="deposit-income p-4">
+                <div
+                  class="chart flex justify-center items-center bg-white h-full shadow-lg cursor-pointer"
+                >
+                  <i class="fa fa-chart-line text-red-400 text-4xl"></i>
+                  <div class="texts flex flex-col mx-4">
+                    <div class="title text-xs text-gray-400">
+                      Deposit income
+                    </div>
+                    <div class="money font-bold">$11234</div>
+                  </div>
+                </div>
+              </div>
+              <div class="monthly-income p-4">
+                <div
+                  class="chart flex justify-center items-center bg-white h-full hover:shadow-lg cursor-pointer"
+                >
+                  <i class="fa fa-chart-line text-blue-400 text-4xl"></i>
+                  <div class="texts flex flex-col mx-4">
+                    <div class="title text-xs text-gray-400">
+                      Monthly income
+                    </div>
+                    <div class="money font-bold">$134</div>
+                  </div>
+                </div>
+              </div>
+              <div class="daily-income p-4">
+                <div
+                  class="chart flex justify-center items-center bg-white h-full hover:shadow-lg cursor-pointer"
+                >
+                  <i class="fa fa-chart-line text-green-400 text-4xl"></i>
+                  <div class="texts flex flex-col mx-4">
+                    <div class="title text-xs text-gray-400">Daily income</div>
+                    <div class="money font-bold">$14</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="statistics bg-gray-100 p-6 mb-4">
+            <div class="head flex">
+              <h1 class="text-xl font-bold">Statistics</h1>
+              <button
+                class="rounded-full border ml-auto bg-white px-4 py-1 text-xs"
+              >
+                6 Mon
+                <i class="fa fa-angle-down"></i>
+              </button>
+            </div>
+            <div class="stat h-48 flex justify-center">
+              <img src="../src/img/stat.svg" alt="stat" class="w-full h-48" />
+              <img src="../src/img/stat.svg" alt="stat" class="w-full h-48" />
+              <img src="../src/img/stat.svg" alt="stat" class="w-full h-48" />
+            </div>
+          </div>
+          <div class="category">
+            <div class="head flex px-2">
+              <h1 class="text-xl font-bold">Category expenses</h1>
+              <button
+                class="rounded-full border ml-auto bg-white px-4 py-1 text-xs"
+              >
+                Month
+                <i class="fa fa-angle-down"></i>
+              </button>
+            </div>
+            <div class="body mt-4 flex text-white">
+              <div class="circle border-r w-64">
+                <div
+                  class="circle-1 flex justify-center items-center rounded-full bg-blue-500 w-32 h-32"
+                >
+                  $113212
+                  <div
+                    class="circle-2 flex justify-center items-center rounded-full bg-blue-900 w-24 h-24"
+                  >
+                    $1223
+                    <div
+                      class="circle-3 flex justify-center items-center rounded-full bg-orange-600 w-16 h-16"
+                    >
+                      $323
+                      <div
+                        class="circle-4 text-sm flex justify-center items-center rounded-full bg-gray-200 w-12 h-12 text-gray-600"
+                      >
+                        More
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="list flex-grow mx-16 text-gray-600">
+                <ul class="list-disc">
+                  <li>
+                    <div class="content flex">
+                      Entertainmet
+                      <div class="ml-auto cost">$243</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="content flex">
+                      Kindergarten
+                      <div class="ml-auto cost">$682</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="content flex">
+                      Restaurant
+                      <div class="ml-auto cost">$424</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="content flex">
+                      Education
+                      <div class="ml-auto cost">$643</div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="content flex">
+                      Gifts
+                      <div class="ml-auto cost">$231</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="right px-8">
+          <div class="wrapper w-full h-full bg-gray-800 p-8">
+            <div class="head flex justify-center items-center">
+              <h1 class="text-gray-300 text-2xl">My Cards</h1>
+              <button
+                class="menu-button px-2 h-6 rounded border ml-auto border-gray-700 flex justify-center items-center"
+              >
+                <i class="fa fa-ellipsis-h text-xs text-gray-500"></i>
+              </button>
+            </div>
+
+            <div class="cards h-48"></div>
+            <div class="progress w-full h-2 bg-gray-600 rounded-full">
+              <div class="color w-48 bg-yellow-300 h-full rounded-full"></div>
+            </div>
+
+            <div class="send-to mt-8">
+              <h1 class="mb-2 text-gray-500 font-bold text-sm">Sent money to:</h1>
+              <div class="avatars flex justify-evenly">
+                <div class="av rounded-full">
+                  <div
+                    class="avatar rounded-full bg-orange-400 text-white w-12 h-12 flex justify-center items-center cursor-pointer"
+                  >
+                    <i class="fa fa-user"></i>
+                  </div>
+                </div>
+                <div class="av rounded-full">
+                  <div
+                    class="avatar rounded-full bg-red-400 text-white w-12 h-12 flex justify-center items-center cursor-pointer"
+                  >
+                    <i class="fa fa-user"></i>
+                  </div>
+                </div>
+                <div class="av rounded-full">
+                  <div
+                    class="avatar rounded-full bg-indigo-400 text-white w-12 h-12 flex justify-center items-center cursor-pointer"
+                  >
+                    <i class="fa fa-user"></i>
+                  </div>
+                </div>
+                <div class="av rounded-full">
+                  <div
+                    class="avatar rounded-full bg-green-400 text-white w-12 h-12 flex justify-center items-center cursor-pointer"
+                  >
+                    <i class="fa fa-user"></i>
+                  </div>
+                </div>
+                <div class="av rounded-full">
+                  <div
+                    class="avatar rounded-full bg-blue-400 text-white w-12 h-12 flex justify-center items-center cursor-pointer"
+                  >
+                    <i class="fa fa-user"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="latest-pending"></div>
+          </div>
+        </section>
+      </article>
     </main>
   </body>
 </html>

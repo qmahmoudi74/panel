@@ -3,9 +3,6 @@
 * {
   -webkit-tap-highlight-color: transparent;
 }
-:focus {
-  outline: 0;
-}
 
 @tailwind components;
 
@@ -19,6 +16,18 @@
   border-bottom-left-radius: 2rem;
 }
 
+.right {
+  width: 33%;
+}
+
+.left {
+  width: 66%;
+}
+
+.chart {
+  border-radius: 1.5rem;
+}
+
 .search {
   position: relative;
   display: flex;
@@ -28,11 +37,11 @@
 }
 
 .search i {
-  left: 13%;
+  left: 0;
 }
 
 .search-input {
-  width: 75%;
+  width: 100%;
 }
 
 .navigation {
@@ -43,10 +52,44 @@
   width: 30%;
 }
 
+.statistics {
+  border-radius: 1rem;
+}
+
 .bell-icon .notification {
   top: 3px;
   right: 0;
   font-size: 15%;
 }
 
+.circle-1 {
+  position: relative;
+}
+
+.circle-2 {
+  position: absolute;
+  top: 25%;
+  left: 75%;
+}
+
+.circle-3 {
+  position: absolute;
+  top: 50%;
+  right: 65%;
+}
+
+.circle-4 {
+  position: absolute;
+  top: -135%;
+  left: 100%;
+}
+
+.wrapper {
+  border-radius: 1rem;
+}
+
 @tailwind utilities;
+
+:focus {
+  outline: 0 !important;
+}
